@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Resto</title>
+    <style>
+        .logo{
+        color: #111;
+        font-weight: bold;
+        font-size: 2em;
+        text-decoration: none; }
+        .navbar a{
+        color: #111;
+        text-decoration: none;
+        margin-left: 30px;
+        font-weight: 700;}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><span>R</span>esto</a>
+        <div class="menutoggle" onclick="toggleMenu();"></div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html" onclick="toggleMenu();">Accueil</a></li>
+                <li><a href="aprops.html" onclick="toggleMenu();">A propos</a></li>
+                <li><a href="aprops.html" onclick="toggleMenu();">Menu</a></li>
+                <li><a href="contact.html" onclick="toggleMenu();">Contact</a></li>
+                <a href="reservation.html" class="bnt-reserve" onclick="toggleMenu();">Rerservation</a>
+
+            </ul>
+        </nav>
+    </header>
+  
+    <section class="contact" id="contact">
+        <div class="titre noir">
+            <h2 class="titre-text"><span>C</span>ontact</h2>
+            <p>Pour plus information,contactez-nous en remplisent toute le formulaire.</p>
+        </div>
+        <div class="contactform form">
+            <h3>Envoyer un message</h3>
+            <div class="inputboite">
+                <input type="text" placeholder="nom">
+            </div>
+            <div class="inputboite">
+                <input type="text" placeholder="email">
+            </div>
+            <div class="inputboite">
+                 <textarea placeholder="message"></textarea>
+            </div>
+            <div class="inputboite">
+                <input type="submit" value="Envoyer">
+            </div>
+        </div>
+    </section>
+    <div class="copyright">
+        <p>copyright 2024 <a href="#">Michee Kayembe Nshimba</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Resto</title>
+    <style>
+        .logo{
+        color: #111;
+        font-weight: bold;
+        font-size: 2em;
+        text-decoration: none; }
+        .navbar a{
+        color: #111;
+        text-decoration: none;
+        margin-left: 30px;
+        font-weight: 700;}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><span>R</span>esto</a>
+        <div class="menutoggle" onclick="toggleMenu();"></div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html" onclick="toggleMenu();">Accueil</a></li>
+                <li><a href="aprops.html" onclick="toggleMenu();">A propos</a></li>
+                <li><a href="menu.html" onclick="toggleMenu();">Menu</a></li>
+                <li><a href="contact.html" onclick="toggleMenu();">Contact</a></li>
+                <a href="reservation.html" class="bnt-reserve" onclick="toggleMenu();">Rerservation</a>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section class="apropos" id="apropos">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titre-text"><span>A</span> Propos De Nous</h2>
+                <p> Bienvenue chez Resto, votre adresse incontournable à Kinshasa pour une expérience culinaire raffinée et authentique. Situé au cœur de la capitale congolaise, Resto est bien plus qu’un simple lieu de restauration : c’est une destination où saveurs, convivialité et art de vivre se rencontrent.
+
+                    Né de la passion pour la cuisine et l’hospitalité, Resto propose un menu qui célèbre la richesse gastronomique locale tout en s’inspirant des cuisines du monde. Notre chef talentueux et son équipe mettent un point d’honneur à travailler avec des ingrédients frais et de qualité, issus de producteurs locaux, pour créer des plats savoureux qui raviront vos papilles.
+                    
+                    Que vous soyez amateur de recettes traditionnelles revisitées ou curieux de découvrir des créations modernes, Resto a de quoi séduire tous les goûts. Nos plats sont préparés avec soin pour refléter notre engagement envers la qualité et l'authenticité.
+                    
+                    L’ambiance de Resto a été pensée pour vous offrir un cadre chaleureux et élégant, idéal pour un dîner en tête-à-tête, une sortie entre amis ou une réunion d’affaires. Notre personnel, souriant et attentionné, est toujours à votre service pour faire de votre visite un moment agréable et inoubliable.
+                    
+                    Nous croyons que chaque repas est une occasion de partage et de célébration, c’est pourquoi nous proposons également une carte de boissons soigneusement élaborée, comprenant des vins, cocktails et jus locaux, pour accompagner et sublimer vos plats.
+                    
+                    Chez Resto, chaque assiette raconte une histoire, et chaque client fait partie de la nôtre. Nous vous remercions de nous choisir pour vos moments gourmands et avons hâte de vous accueillir pour une expérience culinaire exceptionnelle à Kinshasa.
+                    </p>
+            </div>
+            <div>
+                <div class="col50">
+                    <img src="./images/plat3.jpg" alt="image" style="width: 300px;height: 250px;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="copyright">
+        <p>copyright 2024 <a href="#">Michee Kayembe Nshimba</a></p>
+    </div>
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky",window.scrollY>0);
+        });
+        function toggleMenu(){
+            const menutoggle = document.querySelector('.menutoggle');
+            const navbar = document.querySelector('.navbar');
+            menutoggle.classList.toggle('active');
+            navbar.classList.toggle('active')
+
+        }
+    </script>
+</body>
+</html>

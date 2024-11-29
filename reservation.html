@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Resto</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><span>R</span>esto</a>
+        <div class="menutoggle" onclick="toggleMenu();"></div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html" onclick="toggleMenu();">Accueil</a></li>
+                <li><a href="aprops.html" onclick="toggleMenu();">A propos</a></li>
+                <li><a href="menu.html" onclick="toggleMenu();">Menu</a></li>               
+                <li><a href="contact.html" onclick="toggleMenu();">Contact</a></li>
+                <a href="reservation.html" class="bnt-reserve" onclick="toggleMenu();">Rerservation</a>
+
+            </ul>
+        </nav>
+    </header>
+    <section class="reservation" id="reservation">
+        
+        <div class="contenu">
+            
+            <img src="images/foooo.jpg" alt="">
+            <h2><span>R</span>erservation</h2>
+            <form action="#">
+                <div class="gaudroit">
+                    
+                    <div class="gauche">
+                        <div>
+                            <label><span>N</span>om</label>
+                            <input type="text" required>
+                        </div>
+                        <div>
+                            <label><span>P</span>rénom</label>
+                            <input type="text" required>
+                        </div>
+                        <div>
+                            <label><span>e-</span>mail</label>
+                            <input type="email" required>
+                        </div>
+                        <div>
+                            <label><span>T</span>elephone</label>
+                            <input type="tel" required>
+                        </div>
+                    </div>
+                    
+                    <div class="droit">
+                        <div>
+                            <label for=""><span>T</span>able</label>
+                            <select name="table" id="table">
+                                <optgroup label="Table Vip"> 
+                                    <option value="Aron">Aron</option>
+                                    <option value="123">123</option>
+                                    <option value="Stine">stine</option>
+                                </optgroup>
+                                <optgroup label="Table Simple">
+                                    <option value="Fatou">Fatou</option>
+                                    <option value="Ange">Ange</option>
+                                    <option value="Daniel">Daniel</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div>
+                            <label for=""><span>N</span>ombre de <span>P</span>ersonne</label>
+                            <select name="nombpers" id="nombpers">
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="6"></option>
+                            </select>
+                        </div>
+                        <div>
+                            <label><span>D</span>ate</label>
+                            <input type="date" required>
+                        </div>
+                        <div>
+                            <label><span>H</span>eure</label>
+                            <input type="time" required>
+                        </div>
+                        <input type="submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <div class="copyright">
+        <p>copyright 2024 <a href="#">Michee Kayembe Nshimba</a></p>
+    </div>
+</body>
+</html>
